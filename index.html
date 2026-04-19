@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Massurge</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <div class="navbar">
+    <div class="logo" id="homeLink">Massurge</div>
+
+    <div class="tabs">
+      <div class="tab active" id="demoTab">Demo</div>
+      <div class="tab" id="galleryTab">Gallery</div>
+    </div>
+  </div>
+
+
+  <!-- MAIN PAGE: Hero + Demo -->
+  <div id="mainPage">
+
+    <section class="hero" id="heroSection">
+        <canvas id="heroCanvas"></canvas>
+      
+        <div class="hero-content">
+          <h1>Massurge</h1>
+          <h1>Generate video from images</h1>
+          <h2>Generate video from images</h2>
+          <p>Fast, simple, and high-quality AI video generation
+            . Fast, simple, and high-quality AI video generation. Fas
+            t, simple, and high-quality AI video generation.Fast, sim
+            ple, and high-quality AI video generation.Fast, simple, and hi
+            gh-quality AI video generation.Fast, simple, and high-quality A
+            I video generation.Fast, simple, and high-quality AI videhigh-qua
+            lity AI video generation. Fast, simple, and high-quality AI video generation.</p>
+          <button class="hero-btn" id="tryDemoBtn">Try Demo</button>
+        </div>
+      </section>
+
+    <!-- DEMO -->
+    <section id="demoSection">
+      <div class="demo-screen" >
+        <div id="demoPage">
+          <div class="demo-panel">
+    
+            <div class="demo">
+              <div class="box upload-box" id="uploadBox">
+                <div class="upload-placeholder" id="uploadPlaceholder">Upload</div>
+                <img id="uploadPreview" class="upload-preview" alt="Uploaded preview" />
+                <div id="uploadSuccess" class="upload-success">✓ Input Ready</div>
+              </div>
+    
+              <div class="box result-box" id="resultBox">
+                <div class="result-placeholder" id="resultPlaceholder">Result</div>
+              </div>
+            </div>
+    
+            <div class="action-bar">
+              <button id="runButton" class="action-btn primary">Run</button>
+              <button id="clearButton" class="action-btn">Clear All</button>
+            </div>
+    
+          </div>
+    
+          <div class="input-gallery" id="inputGallery"></div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- GALLERY PAGE -->
+  <div id="galleryPage" style="display:none;">
+    <section class="gallery-hero">
+      <h2>Gallery</h2>
+      <p>Explore selected image-to-video results and visual experiments.</p>
+    </section>
+  
+    <section class="gallery-page-section">
+      <div class="masonry-gallery" id="masonryGallery">
+        <!-- JS 动态插入 -->
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
